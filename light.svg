@@ -1,0 +1,372 @@
+<!-- light.svg -->
+<svg xmlns="http://w3.org" viewBox="0 0 1180 610" width="100%" height="100%">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url("https://googleapis.com");
+
+      .title {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        fill: #0f172a;
+      }
+      .subtitle {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        fill: #475569;
+      }
+      .term-text {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 14px;
+        fill: #0f172a;
+      }
+      .term-muted {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 14px;
+        fill: #64748b;
+      }
+      .term-accent {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 14px;
+        fill: #2563eb;
+        font-weight: 500;
+      }
+      .ascii-text {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 10px;
+        font-weight: 700;
+      }
+      .pill-text {
+        font-family: "JetBrains Mono", monospace;
+        font-size: 11px;
+        font-weight: 500;
+        fill: #334155;
+      }
+
+      .glow-pulse {
+        animation: pulse 4s infinite alternate;
+      }
+      @keyframes pulse {
+        0% {
+          opacity: 0.15;
+        }
+        100% {
+          opacity: 0.35;
+        }
+      }
+    </style>
+
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="50%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#10B981" />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="-200%"
+        to="200%"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+
+    <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Radial Glows (Softer for Light Mode) -->
+    <radialGradient id="radialBlur1" cx="20%" cy="30%" r="40%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="radialBlur2" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Soft Border Shimmer -->
+    <linearGradient id="borderShimmer" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" stop-opacity="0.02" />
+      <stop offset="50%" stop-color="#2563EB" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.02" />
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="-100%"
+        to="100%"
+        dur="8s"
+        repeatCount="indefinite"
+      />
+    </linearGradient>
+
+    <!-- Soft Glow for Highlighting Active Tags -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1180" height="610" rx="24" fill="url(#bgGrad)" />
+
+  <!-- Ambient Soft Blur Ambient Fields -->
+  <circle
+    cx="200"
+    cy="200"
+    r="300"
+    fill="url(#radialBlur1)"
+    class="glow-pulse"
+  />
+  <circle
+    cx="950"
+    cy="450"
+    r="350"
+    fill="url(#radialBlur2)"
+    class="glow-pulse"
+  />
+
+  <!-- Outer Elegant Border -->
+  <rect
+    width="1176"
+    height="606"
+    x="2"
+    y="2"
+    rx="22"
+    fill="none"
+    stroke="url(#borderShimmer)"
+    stroke-width="1.5"
+  />
+
+  <!-- ==================== LEFT SIDE: ASCII TERMINAL ==================== -->
+  <g transform="translate(40, 40)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      values="40,40; 40,34; 40,40"
+      dur="6s"
+      repeatCount="indefinite"
+    />
+
+    <!-- Light Mode Glass Terminal -->
+    <rect
+      width="420"
+      height="530"
+      rx="16"
+      fill="#F8FAFC"
+      fill-opacity="0.8"
+      stroke="rgba(15,23,42,0.08)"
+      stroke-width="1"
+      style="filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.03))"
+    />
+
+    <!-- Controls -->
+    <circle cx="25" cy="25" r="5" fill="#EF4444" opacity="0.6" />
+    <circle cx="41" cy="25" r="5" fill="#F59E0B" opacity="0.6" />
+    <circle cx="57" cy="25" r="5" fill="#10B981" opacity="0.6" />
+    <text
+      x="210"
+      y="28"
+      font-family="JetBrains Mono"
+      font-size="11"
+      fill="#94A3B8"
+      text-anchor="middle"
+    >
+      vector_core.env
+    </text>
+
+    <!-- Micro Scanline -->
+    <line
+      x1="15"
+      y1="60"
+      x2="405"
+      y2="60"
+      stroke="#2563EB"
+      stroke-width="1"
+      opacity="0.08"
+    >
+      <animate
+        attributeName="y1"
+        values="60;510;60"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+      <animate
+        attributeName="y2"
+        values="60;510;60"
+        dur="5s"
+        repeatCount="indefinite"
+      />
+    </line>
+
+    <!-- Animated Geometric Matrix Pattern (Blue-Cyan) -->
+    <g fill="url(#asciiGrad)">
+      <g class="ascii-text">
+        <text x="35" y="90" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.1s" fill="freeze" />
+          ▖▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▗
+        </text>
+        <text x="35" y="110" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.2s" fill="freeze" />
+          ▩▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▩
+        </text>
+        <text x="35" y="130" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.3s" fill="freeze" />
+          ▩ ◢◤ ◥◣ ▩
+        </text>
+        <text x="35" y="150" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.4s" fill="freeze" />
+          ▩ ◢◤ ◢▆▅▄▃ ▃▄▅▆◣ ◥◣ ▩
+        </text>
+        <text x="35" y="170" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.5s" fill="freeze" />
+          ▩ ◢◤ ◢◤ ◥◣ ◢◤ ◥◣ ◥◣ ▩
+        </text>
+        <text x="35" y="190" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.6s" fill="freeze" />
+          ▩ ▩ ▩ ★ ▩ ▩ ★ ▩ ▩ ▩
+        </text>
+        <text x="35" y="210" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.7s" fill="freeze" />
+          ▩ ◥◣ ◥◣ ◢◤ ◥◣ ◢◤ ◢◤ ▩
+        </text>
+        <text x="35" y="230" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.8s" fill="freeze" />
+          ▩ ◥◣ ◥▆▅▄▃◤ ◥▃▄▅▆◤ ◢◤ ▩
+        </text>
+        <text x="35" y="250" opacity="0">
+          <animate attributeName="opacity" to="1" begin="0.9s" fill="freeze" />
+          ▩ ◥◣ ◢◤ ▩
+        </text>
+        <text x="35" y="270" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.0s" fill="freeze" />
+          ▩ ▩ ◢███████████◣ ▩ ▩
+        </text>
+        <text x="35" y="290" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.1s" fill="freeze" />
+          ▩ ▩ ◥███████████◤ ▩ ▩
+        </text>
+        <text x="35" y="310" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.2s" fill="freeze" />
+          ▩ ◢◤ ◥◣ ▩
+        </text>
+        <text x="35" y="330" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.3s" fill="freeze" />
+          ▩ ◢◤ ▰▰▰▰▰▰▰▰▰▰▰▰▰ ◥◣ ▩
+        </text>
+        <text x="35" y="350" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.4s" fill="freeze" />
+          ▩ ◢◤ ▚▞▚▞▚▞▚▞▚▞▚▞▚ ◥◣ ▩
+        </text>
+        <text x="35" y="370" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.5s" fill="freeze" />
+          ▩ ▩ 🔥 INITIALIZING 🔥 ▩ ▩
+        </text>
+        <text x="35" y="390" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.6s" fill="freeze" />
+          ▩ ◥◣ ▚▞▚▞▚▞▚▞▚▞▚▞▚ ◢◤ ▩
+        </text>
+        <text x="35" y="410" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.7s" fill="freeze" />
+          ▩ ◥◣ ▰▰▰▰▰▰▰▰▰▰▰▰▰ ◢◤ ▩
+        </text>
+        <text x="35" y="430" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.8s" fill="freeze" />
+          ▩ ◥◣ ◢◤ ▩
+        </text>
+        <text x="35" y="450" opacity="0">
+          <animate attributeName="opacity" to="1" begin="1.9s" fill="freeze" />
+          ▩▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▩
+        </text>
+        <text x="35" y="470" opacity="0">
+          <animate attributeName="opacity" to="1" begin="2.0s" fill="freeze" />
+          ▝▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▩▘
+        </text>
+      </g>
+    </g>
+
+    <!-- Terminal Status Line -->
+    <text x="35" y="505" class="term-muted">&gt; Status:</text>
+    <text x="110" y="505" class="term-accent" font-weight="700">LIVE</text>
+    <rect x="150" y="493" width="8" height="14" fill="#2563EB">
+      <animate
+        attributeName="opacity"
+        values="1;0;1"
+        dur="1s"
+        repeatCount="indefinite"
+      />
+    </rect>
+  </g>
+
+  <!-- ==================== RIGHT SIDE: DEV DASHBOARD ==================== -->
+  <g transform="translate(490, 40)">
+    <g transform="translate(0, 30)">
+      <text x="0" y="0" class="subtitle">Hi 👋</text>
+      <text x="0" y="40" class="title">I'm Katerinas Maltceva</text>
+    </g>
+
+    <!-- Animated Typing Role Stream -->
+    <g transform="translate(0, 115)">
+      <text
+        x="0"
+        y="0"
+        font-family="'JetBrains Mono', monospace"
+        font-size="20"
+        font-weight="700"
+        fill="url(#accentGrad)"
+      >
+        <animate
+          attributeName="string"
+          values="Full Stack Developer;React Specialist;SaaS Builder;Open Source Contributor"
+          dur="12s"
+          repeatCount="indefinite"
+        />
+      </text>
+      <!-- Typing Blinking Cursor -->
+      <rect x="260" y="-18" width="10" height="22" fill="#2563EB">
+        <animate
+          attributeName="x"
+          values="240;270;220;280"
+          dur="12s"
+          repeatCount="indefinite"
+        />
+        <animate
+          attributeName="opacity"
+          values="1;0;1"
+          dur="0.8s"
+          repeatCount="indefinite"
+        />
+      </rect>
+    </g>
+
+    <!-- Metadata Sequential Block -->
+    <g transform="translate(0, 160)">
+      <g opacity="0">
+        <animate attributeName="opacity" to="1" begin="0.5s" fill="freeze" />
+        <text x="0" y="20" class="term-muted">📍 Location:</text>
+        <text x="130" y="20" class="term-text">Moscow, Russian</text>
+      </g>
+
+      <g opacity="0">
+        <animate attributeName="opacity" to="1" begin="0.8s" fill="freeze" />
+        <text x="0" y="45" class="term-muted">🎓 Education:</text>
+        <text x="130" y="45" class="term-text">
+          Self-taught + Result University
+        </text>
+      </g>
+
+      <g opacity="0">
+        <animate attributeName="opacity" to="1" begin="1.1s" fill="freeze" />
+        <text x="0" y="70" class="term-muted">🚀 Focus:</text>
+      </g>
+    </g>
+  </g>
+</svg>
