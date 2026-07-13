@@ -11,16 +11,12 @@
       .pill-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; fill: #E2E8F0; }
       .glow-pulse { animation: pulse 4s infinite alternate; }
       @keyframes pulse { 0% { opacity: 0.3; } 100% { opacity: 0.6; } }
+      .marquee-text { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700; fill: #22D3EE; animation: marquee 15s linear infinite; }
+      @keyframes marquee { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-360px, 0, 0); } }
     </style>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#030712"/>
       <stop offset="100%" stop-color="#0B0F19"/>
-    </linearGradient>
-    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7C3AED"/>
-      <stop offset="50%" stop-color="#22D3EE"/>
-      <stop offset="100%" stop-color="#10B981"/>
-      <animateTransform attributeName="transform" type="translate" from="-200%" to="200%" dur="6s" repeatCount="indefinite"/>
     </linearGradient>
     <linearGradient id="asciiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#22D3EE"/>
@@ -43,7 +39,7 @@
 
   <!-- LEFT SIDE -->
   <g transform="translate(40, 40)">
-    <animateTransform attributeName="transform" type="translate" values="40,40; 40,32; 40,40" dur="6s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="40,40; 40,32; 40,40" dur="6s" repeatCount="indefinite" type="translate"/>
     <rect width="420" height="530" rx="16" fill="#0F172A" fill-opacity="0.7" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
     <circle cx="25" cy="25" r="5" fill="#EF4444" opacity="0.8"/>
     <circle cx="41" cy="25" r="5" fill="#F59E0B" opacity="0.8"/>
@@ -89,13 +85,11 @@
       <text x="0" y="40" class="title">I'm Katerinas Maltceva</text>
     </g>
 
+    <!-- Safe CSS Marquee Row -->
     <g transform="translate(0, 115)">
-      <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="700" fill="url(#accentGrad)">
-        <animate attributeName="string" values="Full Stack Developer;React Specialist;SaaS Builder;Open Source Contributor" dur="12s" repeatCount="indefinite"/>
-      </text>
-      <rect x="260" y="-18" width="10" height="22" fill="#10B981">
-        <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
-      </rect>
+      <svg width="600" height="30" style="overflow: hidden;">
+        <text x="0" y="20" class="marquee-text">Full Stack Developer • React Specialist • SaaS Builder • </text>
+      </svg>
     </g>
 
     <g transform="translate(0, 160)">
@@ -138,4 +132,8 @@
         </g>
         <g transform="translate(375,0)">
           <rect width="75" height="28" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
+          <text x="37.5" y="18" text-anchor="middle" class="pill-text">Zustand</text>
+        </g>
+        <g transform="translate(460,0)">
+          <rect width="75" height="28" rx="14" fill="#1E293B" stroke="rgba(16,185,129,0.06)" stroke-width="1"/>
+          <text x="37.5" y="18" text-anchor="middle" class="pill-text">Node.js</text>
