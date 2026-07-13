@@ -1,4 +1,9 @@
-## Hi there 👋
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="light.svg">
+  <img alt="Katerinas Maltceva Premium Hero Banner" src="dark.svg" width="100%">
+</picture>
+
 
 <!--
 **ururu42/ururu42** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
