@@ -154,34 +154,32 @@
 
       <text x="504" y="158" fill="#F8FAFC" font-size="26" font-weight="700">Hi <tspan font-size="24">👋</tspan> I'm <tspan fill="url(#accent)">Katerina Maltceva</tspan></text>
 
-      <g font-size="17">
-        <text x="504" y="192" fill="#94A3B8">$ role:</text>
-        <g>
-          <text x="566" y="192" fill="#22D3EE">
-            <tspan>Founder @ Result University</tspan>
-            <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.9;1" dur="2.6s" begin="0s;15.6s" fill="freeze"/>
-          </text>
-          <text x="566" y="192" fill="#7C3AED" opacity="0">
-            <tspan>Founder @ Клуб Незаменимых</tspan>
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="2.6s;18.2s" fill="freeze"/>
-          </text>
-          <text x="566" y="192" fill="#10B981" opacity="0">
-            <tspan>AI Engineering Educator</tspan>
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="5.2s;20.8s" fill="freeze"/>
-          </text>
-          <text x="566" y="192" fill="#22D3EE" opacity="0">
-            <tspan>Frontend Architect</tspan>
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="7.8s;23.4s" fill="freeze"/>
-          </text>
-          <text x="566" y="192" fill="#7C3AED" opacity="0">
-            <tspan>Content Creator (310K+)</tspan>
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="10.4s;26s" fill="freeze"/>
-          </text>
-          <text x="566" y="192" fill="#10B981" opacity="0">
-            <tspan>Systems Thinker</tspan>
-            <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="13s;28.6s" fill="freeze"/>
-          </text>
-        </g>
+      <g>
+  <text x="566" y="192" fill="#22D3EE">
+    <tspan>Full Stack Developer</tspan>
+    <animate attributeName="opacity" values="1;1;0" keyTimes="0;0.9;1" dur="2.6s" begin="0s;15.6s" fill="freeze"/>
+  </text>
+  <text x="566" y="192" fill="#7C3AED" opacity="0">
+    <tspan>SaaS Builder</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="2.6s;18.2s" fill="freeze"/>
+  </text>
+  <text x="566" y="192" fill="#10B981" opacity="0">
+    <tspan>React Specialist</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="5.2s;20.8s" fill="freeze"/>
+  </text>
+  <text x="566" y="192" fill="#22D3EE" opacity="0">
+    <tspan>Node.js Developer</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="7.8s;23.4s" fill="freeze"/>
+  </text>
+  <text x="566" y="192" fill="#7C3AED" opacity="0">
+    <tspan>Independent Creator</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="10.4s;26s" fill="freeze"/>
+  </text>
+  <text x="566" y="192" fill="#10B981" opacity="0">
+    <tspan>Problem Solver</tspan>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.04;0.9;1" dur="2.6s" begin="13s;28.6s" fill="freeze"/>
+  </text>
+</g>
       </g>
       <rect x="566" y="180" width="8" height="15" fill="#22D3EE">
         <animate attributeName="opacity" values="1;0" dur="0.8s" repeatCount="indefinite"/>
