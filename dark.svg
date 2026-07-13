@@ -1,23 +1,21 @@
 <svg xmlns="http://w3.org" viewBox="0 0 1180 610" width="100%" height="100%">
   <defs>
     <style>
-      @import url('https://googleapis.com');
-      .title { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 34px; fill: #F8FAFC; }
-      .subtitle { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 18px; fill: #94A3B8; }
-      .term-text { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #F8FAFC; }
-      .term-muted { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #64748B; }
-      .term-accent { font-family: 'JetBrains Mono', monospace; font-size: 14px; fill: #22D3EE; font-weight: 500; }
-      .ascii-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; fill: url(#asciiGrad); }
-      .pill-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; fill: #E2E8F0; }
+      .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 800; font-size: 34px; fill: #F8FAFC; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-weight: 600; font-size: 18px; fill: #94A3B8; }
+      .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #F8FAFC; }
+      .term-muted { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #64748B; }
+      .term-accent { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 14px; fill: #22D3EE; font-weight: 500; }
+      .ascii-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 10px; font-weight: 700; fill: url(#asciiGrad); }
+      .pill-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11px; font-weight: 500; fill: #E2E8F0; }
       
-      /* Все анимации переведены на чистый CSS */
       .glow-pulse { animation: pulse 4s infinite alternate; }
       @keyframes pulse { 0% { opacity: 0.2; } 100% { opacity: 0.5; } }
       
       .ascii-float { animation: float 6s ease-in-out infinite; }
       @keyframes float { 0% { transform: translate(40px, 40px); } 50% { transform: translate(40px, 32px); } 100% { transform: translate(40px, 40px); } }
       
-      .marquee-text { font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 700; fill: #22D3EE; animation: marquee 15s linear infinite; }
+      .marquee-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 18px; font-weight: 700; fill: #22D3EE; animation: marquee 15s linear infinite; }
       @keyframes marquee { 0% { transform: translate3d(0, 0, 0); } 100% { transform: translate3d(-360px, 0, 0); } }
       
       .cursor-blink { animation: blink 1s step-end infinite; }
@@ -56,7 +54,7 @@
     <circle cx="25" cy="25" r="5" fill="#EF4444" opacity="0.8"/>
     <circle cx="41" cy="25" r="5" fill="#F59E0B" opacity="0.8"/>
     <circle cx="57" cy="25" r="5" fill="#10B981" opacity="0.8"/>
-    <text x="210" y="28" font-family='JetBrains Mono' font-size='11' fill='#475569' text-anchor='middle'>matrix_core.sh</text>
+    <text x="210" y="28" font-family='monospace' font-size='11' fill='#475569' text-anchor='middle'>matrix_core.sh</text>
     
     <g class="scanline">
       <line x1="15" y1="60" x2="405" y2="60" stroke="#22D3EE" stroke-width="1" opacity="0.15"/>
@@ -168,6 +166,3 @@
         </g>
         <g transform="translate(370,0)">
           <rect width="50" height="28" rx="14" fill="#1E293B" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-          <text x="25" y="18" text-anchor="middle" class="pill-text">Git</text>
-        </g>
-        <g transform="translate(430,0)">
