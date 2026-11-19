@@ -178,8 +178,6 @@
       <g font-size="14" fill="#94A3B8">
         <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
           <text x="504" y="230"><tspan fill="#7C3AED">📍 Location</tspan>   <tspan fill="#F8FAFC">Moscow, Russian</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
-          <text x="504" y="256"><tspan fill="#22D3EE">🎓 Education</tspan>  <tspan fill="#F8FAFC">Самообучение + Result University</tspan></text></g>
         <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
           <text x="504" y="282"><tspan fill="#10B981">⚡ Focus</tspan>      <tspan fill="#F8FAFC">React, JS, Nodejs, Building SaaS, web</tspan></text></g>
         <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.5s" fill="freeze"/>
