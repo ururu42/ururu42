@@ -175,20 +175,21 @@
         <animate attributeName="opacity" values="1;0" dur="0.8s" repeatCount="indefinite"/>
       </rect>
 
-      <g font-size="14" fill="#94A3B8">
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
-          <text x="504" y="230"><tspan fill="#7C3AED">📍 Location</tspan>   <tspan fill="#F8FAFC">Moscow, Russian</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
-          <text x="504" y="282"><tspan fill="#10B981">⚡ Focus</tspan>      <tspan fill="#F8FAFC">React, JS, Nodejs, Building SaaS, web</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.5s" fill="freeze"/>
-          <text x="504" y="308"><tspan fill="#7C3AED">🌐 Website</tspan>   <tspan fill="#F8FAFC">https://time-tracker-client-8ayj.onrender.com/login</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.7s" fill="freeze"/>
-          <text x="504" y="334"><tspan fill="#22D3EE">🐙 GitHub</tspan>   <tspan fill="#F8FAFC">https://github.com/ururu42</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/>
-          <text x="504" y="360"><tspan fill="#7C3AED">✈️ Telegram</tspan>   <tspan fill="#F8FAFC">https://t.me/code_interviews</tspan></text></g>
-        <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.1s" fill="freeze"/>
-          <text x="504" y="386"><tspan fill="#22D3EE">✉️ Email</tspan>   <tspan fill="#F8FAFC">katerina.maltceva.dev@gmail.com</tspan></text></g>
-      </g>
+<g font-size="14" fill="#94A3B8">
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.6s" fill="freeze"/>
+    <text x="504" y="230"><tspan fill="#7C3AED">📍 Location</tspan> <tspan fill="#F8FAFC">Moscow, Russia</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="0.9s" fill="freeze"/>
+    <text x="504" y="256"><tspan fill="#10B981">⚡ Focus</tspan>    <tspan fill="#F8FAFC">React, JS, Nodejs, Building SaaS, web</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.2s" fill="freeze"/>
+    <text x="504" y="282"><tspan fill="#7C3AED">🌐 Website</tspan>  <tspan fill="#F8FAFC">https://onrender.com</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.5s" fill="freeze"/>
+    <text x="504" y="308"><tspan fill="#22D3EE">🐙 GitHub</tspan>   <tspan fill="#F8FAFC">https://github.com</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.7s" fill="freeze"/>
+    <text x="504" y="334"><tspan fill="#7C3AED">✈️ Telegram</tspan> <tspan fill="#F8FAFC">https://t.me/code_interviews</tspan></text></g>
+  <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/>
+    <text x="504" y="360"><tspan fill="#22D3EE">✉️ Email</tspan>    <tspan fill="#F8FAFC">katerina.maltceva.dev@gmail.com</tspan></text></g>
+</g>
+
 
       <g opacity="0"><animate attributeName="opacity" values="0;1" dur="0.5s" begin="2.0s" fill="freeze"/>
         <text x="504" y="370" fill="#475569" font-size="12" letter-spacing="2">SKILLS</text>
